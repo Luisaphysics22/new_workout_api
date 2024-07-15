@@ -16,8 +16,8 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-target_metadata = None
-
+target_metadata = BaseModel.metadata
+ 
  
 def run_migrations_offline() -> None:
     """Run migrations in 'offline' mode.
